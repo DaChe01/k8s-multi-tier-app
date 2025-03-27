@@ -1,0 +1,13 @@
+# VS Code settings
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Kubernetes sensitive files
+mysql-secret.yaml  # Exclude secret file (commit a template instead)
+*-secret.yaml      # Catch-all for any other secrets
+
+# Local development files
+kubeconfig         # Local kubectl config
+.env               # Local environment variables
